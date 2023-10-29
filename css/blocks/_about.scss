@@ -6,10 +6,55 @@
     // #8bd444
     // #c2dfaf
 }
-.about-title {
+.about-content {
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 50px 0;
+    z-index: 0;
+    position: relative;
 }
-.about-title h2{
-    font-size: 70px;
-    font-weight: 700;
+.about-content__text {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    z-index: 0;
+}
+.about-content__text p {
+    font-size: 20px;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+.about-content__image {
+    width: 50%;
+    position: relative;
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.about-content::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    background-image: url(/image/about/background.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 70%;
+    z-index: -10;
+}
+.about-img {
+    rotate: 15deg;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.about-img img {
+    width: 65%;
+    border-radius: 50px;
 }

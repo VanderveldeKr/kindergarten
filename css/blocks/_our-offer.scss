@@ -1,0 +1,30 @@
+.our-offer {
+    padding: 50px 0;
+}
+.our-offer__wrapper {
+    width: 100%;
+}
+.our-offer__content {
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+.our-offer__card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.our-offer__img img {
+    width: 100%;
+    height: auto;
+    border-radius: 50px;
+
+    box-shadow: 2px -2px 2px 2px #8bd444;
+}
+.our-offer__text {
+    text-align: center;
+}
+.our-offer__text h3 {
+    font-size: 32px;
+}

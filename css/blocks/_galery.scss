@@ -1,0 +1,29 @@
+.galery {
+    padding: 50px 0;
+    width: 100%;
+}
+.galey-slider {
+    padding: 50px 0;
+}
+.swiper {
+    width: 100%;
+    height: 300px; 
+    .swiper-button-prev {
+        color: #8bd444;
+    }
+    .swiper-button-next {
+        color: #8bd444;
+    }
+    .swiper-pagination-bullet-active {
+        background: #8bd444;
+      }
+}
+.swiper-slide {
+    padding: 5px;
+    img {
+        height: 300px;
+        border-radius: 20px;
+        box-shadow: 1px -1px 5px 1px #8bd444;
+    }
+}
+
