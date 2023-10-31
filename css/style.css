@@ -449,6 +449,7 @@ header {
 .individual-sessions {
   width: 100%;
   padding: 50px 0;
+  border-radius: 50px;
   background-color: #8bd444;
 }
 
@@ -527,9 +528,98 @@ header {
 
 .swiper-slide {
   padding: 5px;
+  padding-bottom: 15px;
+  margin-bottom: 10px;
 }
 .swiper-slide img {
   height: 300px;
   border-radius: 20px;
   box-shadow: 1px -1px 5px 1px #8bd444;
+}
+
+.form-contact .form-contact__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 50px;
+}
+.form-contact .title h2 {
+  font-size: 48px;
+  text-align: center;
+}
+.form-contact .button-form {
+  background-color: linear-gradient(#8bd444 #45753b);
+}
+.form-contact .button-form .btn-form {
+  padding: 15px 45px;
+  background: linear-gradient(180deg, #8bd444, #45753b);
+}
+.form-contact .button-form .btn-form .flare {
+  transform: skewX(-50deg);
+  animation: flareAnimation 4s infinite linear;
+}
+
+.reviews {
+  margin: 50px 0;
+  padding: 50px 0;
+  border-radius: 50px;
+  background-color: #8bd444;
+}
+.reviews .swiper {
+  background-color: #8bd444;
+}
+
+.swiper-reviews .swiper-wrapper {
+  width: 100%;
+}
+.swiper-reviews .swiper-button-next, .swiper-reviews .swiper-button-prev {
+  color: #fff;
+}
+.swiper-reviews .swiper-slide {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+.swiper-reviews .swiper-slide__wrapper {
+  padding: 25px;
+  width: 50%;
+  border-radius: 50px;
+  overflow: scroll;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.swiper-reviews .swiper-slide__wrapper::-webkit-scrollbar {
+  width: 0;
+}
+.swiper-reviews .reviews-text {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: 300;
+  line-height: 110%;
+  font-size: 23px;
+  display: flex;
+}
+.swiper-reviews .reviews-name {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  padding-left: 20px;
+}
+.swiper-reviews .reviews-star {
+  font-size: 16px;
+}
+.swiper-reviews .reviews-info {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+}
+.swiper-reviews .reviews-icon {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.swiper-reviews .reviews-icon img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
 }/*# sourceMappingURL=style.css.map */

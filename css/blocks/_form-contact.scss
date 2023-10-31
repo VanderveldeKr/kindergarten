@@ -1,0 +1,26 @@
+.form-contact {
+    .form-contact__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 50px;
+    }
+    .title {
+        h2{
+            font-size: 48px;
+            text-align: center;
+        }
+    }
+    .button-form {
+        background-color: linear-gradient(#8bd444 #45753b);
+        .btn-form {
+            padding: 15px 45px;
+            background: linear-gradient(180deg, #8bd444,#45753b );
+        }
+        .btn-form .flare {
+            transform: skewX(-50deg); // Наклон
+            animation: flareAnimation 4s infinite linear; // Время и тип анимации можно менять
+        }
+    }
+}
