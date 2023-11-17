@@ -10,13 +10,12 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    gap: 50px;
     padding: 50px 0;
     z-index: 0;
     position: relative;
 }
 .about-content__text {
-    width: 45%;
+    width: 48%;
     display: flex;
     flex-direction: column;
     gap: 25px;
@@ -27,7 +26,7 @@
     font-family: 'M PLUS Rounded 1c', sans-serif;
 }
 .about-content__image {
-    width: 50%;
+    width: 48%;
     position: relative;
     z-index: 0;
     display: flex;
@@ -47,14 +46,22 @@
     height: 70%;
     z-index: -10;
 }
+.about-content__image {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
 .about-img {
-    rotate: 15deg;
+    width: 100%;
+    height: 200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 .about-img img {
-    width: 65%;
-    border-radius: 50px;
+    width: 100%;
+    height: 200px;
+    border-radius: 35px;
+    object-fit: cover;
+
 }
