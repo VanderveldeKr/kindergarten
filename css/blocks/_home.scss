@@ -32,7 +32,7 @@
 .home-title {
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 0;
 }
 .home-title, .home-subtitle{
     position: relative;
@@ -83,6 +83,12 @@
     font-weight: 600;
     position: relative;
     z-index: 2;
+}
+
+@media(max-width:950px) {
+    .home-title::before{
+        display: none;
+    }
 }
 
 

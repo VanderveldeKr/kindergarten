@@ -96,3 +96,46 @@ header {
         left: 150%;
     }
 }
+
+@media(max-width:950px) {
+    .header-nav__wrapper {
+        display: flex;
+        gap: 5px;
+        align-items: center;
+    }
+    .header-logo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .logo {
+        font-size: 22px;
+        font-weight: 700;
+        text-transform: uppercase;
+        line-height: 100%;
+    }
+    .header-nav__list {
+        display: flex;
+        gap: 3px;
+    }
+    .nav__list-item a{
+        font-size: 14px;   
+        padding: 2px 8px;
+    }
+    .btn-form {
+        padding: 2px 8px;
+        font-size: 14px;
+    }
+    .btn-form .flare {
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 45px;
+        transform: skewX(-45deg); // Наклон
+        animation: flareAnimation;
+        left: -150%;
+        background: linear-gradient(90deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.4));
+        animation: flareAnimation 3s infinite linear; // Время и тип анимации можно менять
+    }
+}

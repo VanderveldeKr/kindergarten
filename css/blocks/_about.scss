@@ -65,3 +65,32 @@
     object-fit: cover;
 
 }
+
+@media(max-width:950px) {
+    .about {
+        background-color: #fff;
+        margin-top: -25px;
+        padding: 25px 0 0 0;
+        // #45753b
+        // #8bd444
+        // #c2dfaf
+    }
+    .about-content {
+        flex-direction: column;
+        gap: 25px;
+    }
+    .about-content__text {
+        width: 100%;
+    }
+    .about-content__image {
+        width: 100%;
+    }
+    .about-content::before{
+        right: 0;
+        left: 0;
+        top: 90%;
+        background-size: 100% 70%;
+        width: 100%;
+        height: 50%;
+    }
+}
