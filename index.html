@@ -18,11 +18,11 @@
                     </div>
                     <nav class="header-nav">
                         <ul class="header-nav__list">
-                            <!-- <li class="nav__list-item"><a href="#">О нас</a></li>
+                            <li class="nav__list-item"><a href="#">О нас</a></li>
                             <li class="nav__list-item"><a href="#">Занятия</a></li>
                             <li class="nav__list-item"><a href="#">Галерея</a></li>
                             <li class="nav__list-item"><a href="#">Отзывы</a></li>
-                            <li class="nav__list-item"><a href="#">Контакты</a></li> -->
+                            <li class="nav__list-item"><a href="#">Контакты</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -32,6 +32,20 @@
             </div>
         </div>
     </header>
+    <div class="burger-menu" style="z-index: 999;">
+        <a href="" class="burger-menu_button">
+          <span class="burger-menu_lines"></span>
+        </a>
+        
+        <nav class="burger-menu_nav home__block-text">
+          <a href="page-home.html" class="burger-menu_link">О нас</a>
+          <a href="page-about.html" class="burger-menu_link">Занятия</a>
+          <a href="page-services.html" class="burger-menu_link">Галерея</a>
+          <a href="page-case.html" class="burger-menu_link">Отзывы</a>
+          <a href="page-insights.html" class="burger-menu_link">Контакты</a>
+        </nav>
+        <div class="burger-menu_overlay"></div>
+    </div>
 
     <main>
         <section class="home">
@@ -39,7 +53,7 @@
                 <div class="home-wrapper">
                     <div class="home-title__wrapper">
                         <div class="home-title">
-                            <p class="subtitle">Детский сад</p>
+                            <p class="subtitle name-sad">Детский сад</p>
                             <h1 class="title">Адаптация</h1>
                             <p class="subtitle">с теплом и заботой к каждому</p>
                         </div>
@@ -61,14 +75,14 @@
                             <p>Мы частный детский центр, работает уже более 4-х лет. За это время были открыты 3 филиала для деток всех возрастов</p>
                             <p>"Адаптация" всестороне развивает Вашего ребенка. Делает его коммуникабельным, творческим эрудированным во всех направлениях.</p>
                             <p>Множество развивающих занятий, отличное питание, осмотр врачом  и многое другое мы предлагаем нашим воспитанникам. Проведение утренников, фотосессий, театральные предстваления радуют деток и их родителей.</p>
-                            <p>Чуткие и заботливые воспитателя всегда окружат теплом и вниманием ващего ребенкаю. Станут ему настоящим другом и наставником</p>
+                            <!-- <p>Чуткие и заботливые воспитателя всегда окружат теплом и вниманием ващего ребенкаю. Станут ему настоящим другом и наставником</p> -->
                         </div>
-                        <div class="about-content__image">
+                        <!-- <div class="about-content__image">
                             <div class="about-img"><img src="./image/about/1.jpg" alt=""></div>
                             <div class="about-img"><img src="./image/about/2.jpg" alt=""></div>
                             <div class="about-img"><img src="./image/about/3.jpg" alt=""></div>
                             <div class="about-img"><img src="./image/about/4.jpg" alt=""></div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -261,20 +275,18 @@
                               <div class="swiper-slide"><img src="./image/galery/one/1.jpg" alt=""></div>
                             </div>
                             <!-- If we need pagination -->
-                            <div class="swiper-pagination"></div>
+                            <!-- <div class="swiper-pagination"></div> -->
                           
                             <!-- If we need navigation buttons -->
                             <div class="swiper-button-prev"></div>
                             <div class="swiper-button-next"></div>
                           
                             <!-- If we need scrollbar -->
-                            <!-- <div class="swiper-scrollbar"></div> -->
+                            <div class="swiper-scrollbar"></div>
                         </div>
 
-                        <div class="swiper swiper-two">
-                            <!-- Additional required wrapper -->
+                        <!-- <div class="swiper swiper-two">
                             <div class="swiper-wrapper">
-                              <!-- Slides -->
                               <div class="swiper-slide"><img src="./image/galery/two/8.jpg" alt=""></div>
                               <div class="swiper-slide"><img src="./image/galery/two/4.jpg" alt=""></div>
                               <div class="swiper-slide"><img src="./image/galery/two/2.jpg" alt=""></div>
@@ -285,14 +297,12 @@
                               <div class="swiper-slide"><img src="./image/galery/two/10.jpg" alt=""></div>
                               <div class="swiper-slide"><img src="./image/galery/two/9.jpg" alt=""></div>
                             </div>
-                            <!-- If we need pagination -->
                             <div class="swiper-pagination"></div>
                           
-                            <!-- If we need navigation buttons -->
                             <div class="swiper-button-prev"></div>
                             <div class="swiper-button-next"></div>
                           
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -611,82 +621,8 @@
     <footer>
 
     </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
-        const swiper = new Swiper('.swiper', {
-        slidesPerView: 3,
-        spaceBetween: 10,
-        pagination: {
-            el: '.swiper-pagination',
-        },
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-        scrollbar: {
-            el: '.swiper-scrollbar',
-        },
-        breakpoints: {
-            320: {
-            slidesPerView: 1,
-            }
-        }
-        });
-
-    </script>
-    <script>
-        const swiper_two = new Swiper('.swiper-two', {
-        slidesPerView: 2,
-        spaceBetween: 5,
-        pagination: {
-            el: '.swiper-pagination',
-        },
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-        scrollbar: {
-            el: '.swiper-scrollbar',
-        }
-        });
-
-        // Добавляем слушатель события изменения размера окна
-        window.addEventListener('resize', function() {
-        if (window.innerWidth <= 950) {
-            swiper_two.params.slidesPerView = 1; // Изменяем slidesPerView на 1 при ширине окна менее или равной 950px
-        } else {
-            swiper_two.params.slidesPerView = 2; // Иначе вернем slidesPerView обратно на 2
-        }
-        
-        swiper_two.update(); // Обновляем слайдер, чтобы применить изменения
-        });
-    </script>
-      <script>
-            var reviewsSwiper = new Swiper(".swiper-reviews", {
-            slidesPerView: 4,
-            spaceBetween: 30,
-            loop: true,
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-            });
-
-            // Добавим слушателя изменения размера экрана
-            window.addEventListener('resize', function() {
-            // Получаем ширину экрана
-                var windowWidth = window.innerWidth;
-
-            // Если ширина экрана меньше или равна 950px, устанавливаем slidesPerView в 1
-            if (windowWidth <= 950) {
-                reviewsSwiper.params.slidesPerView = 1;
-            } else {
-                reviewsSwiper.params.slidesPerView = 4;
-            }
-            
-            // Обновляем слайдер с новыми параметрами
-            reviewsSwiper.update();
-            });
-      </script>
+    <script src="/js/script.js"></script>
 </body>
 </html>

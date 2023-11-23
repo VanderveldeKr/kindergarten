@@ -1,15 +1,13 @@
 .sale {
     width: 100%;
-    padding: 50px 0;
 }
 .sale-wrapper {
     display: flex;
     flex-direction: column;
-    gap: 50px;
 }
 .sale-content {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .sale-card {
     position: relative;
@@ -36,12 +34,12 @@
 @media(max-width:950px){
     .sale {
         width: 100%;
-        padding: 50px 0;
+        padding: 0;
+        padding-bottom: 50px;
     }
     .sale-wrapper {
         display: flex;
         flex-direction: column;
-        gap: 50px;
     }
     .sale-content {
         display: flex;
@@ -59,13 +57,21 @@
             left: 0;
             
     
-            font-size: 21px;
+            font-size: 36px;
             color: #fff;
             font-weight: 700;
             display: flex;
             align-items: center;
             justify-content: center;
             text-align: center;
+        }
+    }
+}
+@media(max-width:550px) {
+    .sale-card {
+        p {
+            width: 70%;
+            font-size: 21px;
         }
     }
 }
