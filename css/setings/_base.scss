@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
 body{
+    overflow-x: hidden;
     width: 100%;
     font-family: 'Amatic SC', sans-serif;
     // font-family: 'M PLUS Rounded 1c', sans-serif;//300;400;500;700
@@ -34,5 +35,10 @@ body{
 @media(max-width:950px) {
     .title h2{
         font-size: 38px;
+    }
+}
+@media(max-width:450px) {
+    .container{
+        padding: 0 5px;
     }
 }

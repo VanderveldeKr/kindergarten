@@ -3,7 +3,7 @@
     height: 100vh;
     background-color: #ffffff;
     background-image: url(../image/home/bacground-home-two.jpg);
-    background-size: 100% 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;
@@ -47,12 +47,12 @@
     background-size: 100% 100%;
     position: absolute;
     z-index: -1;
-    top: -60%;
-    left: -50%;
-    transform: translateX(15%);
+    top: -50%;
+    left: -48%;
+    transform: translateX(20%);
     background-position: center;
-    width: 150%;
-    height: 200%;
+    width: 140%;
+    height: 185%;
 }
 // .home-subtitle::before{
 //     content: '';
@@ -87,9 +87,6 @@
 }
 
 @media(max-width:950px) {
-    .home-title::before{
-        background-size: 100% 100%;
-    }
     .title {
         font-weight: 700;
         font-size: 105px;
@@ -104,6 +101,18 @@
 @media(max-width:950px) {
     .title {
         font-size: 82px;
+    }
+}
+@media(max-width:420px) {
+    .title {
+        font-weight: 700;
+        font-size: 60px;
+    }
+    .subtitle {
+        font-size: 22px;
+    }
+    .name-sad {
+        font-size: 16px;
     }
 }
 

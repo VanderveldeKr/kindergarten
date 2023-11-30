@@ -106,6 +106,7 @@ legend {
 }
 
 body {
+  overflow-x: hidden;
   width: 100%;
   font-family: "Amatic SC", sans-serif;
 }
@@ -142,6 +143,11 @@ body {
 @media (max-width: 950px) {
   .title h2 {
     font-size: 38px;
+  }
+}
+@media (max-width: 450px) {
+  .container {
+    padding: 0 5px;
   }
 }
 header {
@@ -387,7 +393,7 @@ header {
   height: 100vh;
   background-color: #ffffff;
   background-image: url(../image/home/bacground-home-two.jpg);
-  background-size: 100% 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
@@ -416,12 +422,12 @@ header {
   background-size: 100% 100%;
   position: absolute;
   z-index: -1;
-  top: -60%;
-  left: -50%;
-  transform: translateX(15%);
+  top: -50%;
+  left: -48%;
+  transform: translateX(20%);
   background-position: center;
-  width: 150%;
-  height: 200%;
+  width: 140%;
+  height: 185%;
 }
 
 .title {
@@ -445,9 +451,6 @@ header {
 }
 
 @media (max-width: 950px) {
-  .home-title::before {
-    background-size: 100% 100%;
-  }
   .title {
     font-weight: 700;
     font-size: 105px;
@@ -464,6 +467,18 @@ header {
     font-size: 82px;
   }
 }
+@media (max-width: 420px) {
+  .title {
+    font-weight: 700;
+    font-size: 60px;
+  }
+  .subtitle {
+    font-size: 22px;
+  }
+  .name-sad {
+    font-size: 16px;
+  }
+}
 .about {
   background-color: #fff;
   margin-top: -25px;
@@ -474,7 +489,7 @@ header {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 50px 0;
+  padding: 0 0;
   z-index: 0;
   position: relative;
   border-radius: 20px;
@@ -485,16 +500,16 @@ header {
   width: 48%;
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 15px;
   z-index: 0;
   color: #000000;
 }
 
 .about-content__text p {
-  font-size: 24px;
+  font-size: 16px;
   font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  text-shadow: 1px 1px 1px rgb(0, 0, 0), 0 0 1em rgb(0, 0, 0), 0 0 0.2em rgb(255, 255, 255);
+  font-weight: 500;
+  color: #000000;
 }
 
 .about-content__image {
@@ -504,24 +519,6 @@ header {
   display: flex;
   flex-direction: column;
   gap: 25px;
-}
-
-.about-content::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  background-image: url(../image/about/4.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
-  z-index: -10;
-  border-radius: 20px;
-  opacity: 0.4;
 }
 
 .about-content__image {
@@ -702,8 +699,11 @@ header {
 }
 
 .galery {
-  padding: 50px 0;
+  padding: 25px 0;
   width: 100%;
+  background-color: rgba(139, 212, 68, 0.6);
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
 }
 
 .galey-slider {
@@ -862,6 +862,13 @@ header {
 .contacts {
   padding: 50px 0;
 }
+.contacts .star-advantages {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  line-height: 110%;
+  font-size: 23px;
+  text-align: center;
+}
 
 .contacts-content {
   padding: 50px 0;
@@ -989,5 +996,167 @@ header {
   .sale-card p {
     width: 70%;
     font-size: 21px;
+  }
+}
+.advantages {
+  margin-top: 50px;
+  background-color: rgba(139, 212, 68, 0.6);
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.advantages-wrapper {
+  padding: 25px 0;
+  position: relative;
+  z-index: 1;
+}
+.advantages-wrapper::after {
+  content: "";
+  background-image: url(../../image/galery/two/8.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 275px;
+  height: 175px;
+  position: absolute;
+  top: 15%;
+  right: 5%;
+  rotate: 30deg;
+  border-radius: 20px;
+  z-index: -1;
+}
+.advantages-wrapper::before {
+  content: "";
+  background-image: url(../../image/galery/two/4.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 275px;
+  height: 175px;
+  position: absolute;
+  bottom: 0;
+  left: 5%;
+  rotate: -35deg;
+  border-radius: 20px;
+  z-index: -1;
+}
+.advantages-wrapper ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+.advantages-wrapper li {
+  background-color: #fff;
+  padding: 5px 35px;
+  border-radius: 50px;
+  border-radius: 50px;
+  background-color: #ffffff;
+  background-position: center center;
+  border-color: transparent;
+  border-style: solid;
+  box-shadow: 0px 11px 6px 0px rgba(0, 0, 0, 0.2);
+}
+.advantages-wrapper p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+}
+
+.advantages-wrapper ul li:nth-child(1) {
+  transform: rotate(3deg);
+}
+
+.advantages-wrapper ul li:nth-child(2) {
+  transform: rotate(-3deg);
+}
+
+.advantages-wrapper ul li:nth-child(3) {
+  transform: rotate(2deg);
+}
+
+.advantages-wrapper ul li:nth-child(4) {
+  transform: rotate(-1deg);
+}
+
+.advantages-wrapper ul li:nth-child(5) {
+  transform: rotate(1deg);
+}
+
+.advantages-wrapper ul li:nth-child(6) {
+  transform: rotate(-3deg);
+}
+
+.advantages-wrapper ul li:nth-child(7) {
+  transform: rotate(3deg);
+}
+
+.advantages-wrapper ul li:nth-child(8) {
+  transform: rotate(-3deg);
+}
+
+.our-advantages {
+  width: 100%;
+}
+
+.our-advantages-wrapper {
+  width: 100%;
+}
+.our-advantages-wrapper ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 2px;
+}
+.our-advantages-wrapper li {
+  display: flex;
+  border: 1px solid #000;
+  border-radius: 20px;
+  align-items: center;
+  padding: 2px;
+}
+.our-advantages-wrapper img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.our-advantages-wrapper p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  text-align: center;
+}
+
+.star-advantages {
+  margin-top: 25px;
+}
+
+@media (max-width: 429px) {
+  .our-advantages-wrapper {
+    width: 100%;
+  }
+  .our-advantages-wrapper ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px 2px;
+  }
+  .our-advantages-wrapper li {
+    display: flex;
+    border: 1px solid #000;
+    border-radius: 20px;
+    align-items: center;
+    padding: 2px;
+  }
+  .our-advantages-wrapper img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+  .our-advantages-wrapper p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    text-align: center;
   }
 }/*# sourceMappingURL=style.css.map */
