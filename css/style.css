@@ -345,7 +345,7 @@ header {
     background-color: rgba(0, 0, 0, 0.5);
   }
   .header-button {
-    margin-right: 50px;
+    margin-right: 70px;
   }
   .header-nav__wrapper {
     display: flex;
@@ -408,6 +408,13 @@ header {
   flex-direction: column;
   gap: 0;
 }
+.home-title .title {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 100%;
+  letter-spacing: 4px;
+}
 
 .home-title, .home-subtitle {
   position: relative;
@@ -417,24 +424,24 @@ header {
 
 .home-title::before {
   content: "";
-  background-image: url(../image/home/background-title.png);
+  background-image: url(../image/home/background-title-2.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   position: absolute;
   z-index: -1;
-  top: -50%;
-  left: -48%;
+  top: -150px;
+  left: -67%;
   transform: translateX(20%);
   background-position: center;
-  width: 140%;
-  height: 185%;
+  width: 170%;
+  height: 350%;
 }
 
 .title {
   text-align: center;
   line-height: 110%;
-  font-weight: 700;
-  font-size: 82px;
+  font-weight: 500;
+  font-size: 64px;
   text-transform: uppercase;
   z-index: 2;
   position: relative;
@@ -465,6 +472,18 @@ header {
 @media (max-width: 950px) {
   .title {
     font-size: 82px;
+  }
+  .home-title {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .home-title .title {
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 110%;
+    letter-spacing: 4px;
   }
 }
 @media (max-width: 420px) {
@@ -701,7 +720,6 @@ header {
 .galery {
   padding: 25px 0;
   width: 100%;
-  background-color: rgba(139, 212, 68, 0.6);
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
 }
@@ -1000,45 +1018,31 @@ header {
 }
 .advantages {
   margin-top: 50px;
-  background-color: rgba(139, 212, 68, 0.6);
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
 }
 
-.advantages-wrapper {
-  padding: 25px 0;
+.advantages-galery__wrapper {
   position: relative;
   z-index: 1;
 }
-.advantages-wrapper::after {
+.advantages-galery__wrapper::after {
   content: "";
-  background-image: url(../../image/galery/two/8.jpg);
+  background-image: url(../../image/home/bacground-home-two.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
-  width: 275px;
-  height: 175px;
+  background-position: left;
+  opacity: 0.8;
+  width: 100%;
+  height: 100%;
   position: absolute;
-  top: 15%;
-  right: 5%;
-  rotate: 30deg;
-  border-radius: 20px;
+  top: 0;
+  right: 0;
   z-index: -1;
 }
-.advantages-wrapper::before {
-  content: "";
-  background-image: url(../../image/galery/two/4.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 275px;
-  height: 175px;
-  position: absolute;
-  bottom: 0;
-  left: 5%;
-  rotate: -35deg;
-  border-radius: 20px;
-  z-index: -1;
+
+.advantages-wrapper {
+  padding: 25px 0;
 }
 .advantages-wrapper ul {
   display: flex;
@@ -1103,33 +1107,45 @@ header {
 
 .our-advantages-wrapper {
   width: 100%;
-}
-.our-advantages-wrapper ul {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px 2px;
-}
-.our-advantages-wrapper li {
   display: flex;
-  border: 1px solid #000;
-  border-radius: 20px;
+  flex-direction: column;
+  gap: 10px;
+}
+.our-advantages-wrapper .our-advantages__card {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  padding: 2px;
+  border: 1px solid #000;
+  border-radius: 75px;
 }
-.our-advantages-wrapper img {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
+.our-advantages-wrapper .our-advantages__card:nth-child(even) {
+  flex-direction: row-reverse;
 }
-.our-advantages-wrapper p {
+.our-advantages-wrapper .our-advantages__card p {
+  width: 70%;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 22px;
   text-align: center;
+}
+.our-advantages-wrapper .image-our-advantages {
+  background-color: #000;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.our-advantages-wrapper .image-our-advantages img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
 }
 
 .star-advantages {
   margin-top: 25px;
+  text-align: center;
+  font-size: 22px;
 }
 
 @media (max-width: 429px) {

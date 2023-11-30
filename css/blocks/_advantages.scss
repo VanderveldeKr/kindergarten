@@ -1,52 +1,33 @@
 .advantages {
     margin-top: 50px;
-    background-color: rgba(139, 212, 68, 0.6);
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
 }
+.advantages-galery__wrapper {
+  position: relative;
+  z-index: 1;
+  &::after {
+    content: '';
 
+    background-image: url(../../image/home/bacground-home-two.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+    opacity: .8;
+
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    z-index: -1;
+  }
+
+}
 .advantages-wrapper {
     padding: 25px 0;
-    position: relative;
-    z-index: 1;
-    &::after {
-      content: '';
-
-      background-image: url(../../image/galery/two/8.jpg);
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-
-      width: 275px;
-      height: 175px;
-
-      position: absolute;
-      top: 15%;
-      right: 5%;
-      rotate: (30deg);
-      border-radius: 20px;
-
-      z-index: -1;
-    }
-    &::before {
-      content: '';
-
-      background-image: url(../../image/galery/two/4.jpg);
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-
-      width: 275px;
-      height: 175px;
-
-      position: absolute;
-      bottom: 0;
-      left: 5%;
-      rotate: (-35deg);
-      border-radius: 20px;
-
-      z-index: -1;
-    }
     ul {
         display: flex;
         flex-direction: column;
