@@ -1,53 +1,59 @@
 .our-advantages {
     width: 100%;
+    margin-top: 50px;
 }
 .our-advantages-wrapper {
     width: 100%;
-
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-
-    .our-advantages__card {
-        width: 100%;
+    padding-top: 25px;
+    ul {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+    li {
         display: flex;
-        justify-content: space-between;
+        border-radius: 20px;
         align-items: center;
-        border: 1px solid #000;
-        border-radius: 75px;
-
-
+        padding: 2px;
         &:nth-child(even) {
             flex-direction: row-reverse;
-        }
-
-        p {
-            width: 70%;
-            font-family: "Montserrat", sans-serif;
-            font-weight: 500;
-            font-size: 22px;
-            text-align: center;
+            justify-content: space-between;
         }
     }
-    .image-our-advantages {
-        background-color: #000;
+    .our-advantages__img {
+        width: 30%;
         border-radius: 50%;
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        overflow: hidden;
         img {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
     }
+    .our-advantages__text {
+        width: 70%;
+        text-align: center;
+    }
+
+    p {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        font-size: 15px;
+        text-align: center;
+        padding: 0 10px;
+        position: relative;
+        width: fit-content;
+        margin: 0 auto;
+        span {
+            position: absolute;
+            top: -5px;
+            right: -5px;
+        }
+    }
+
 }
 .star-advantages {
-    margin-top: 25px;
-    text-align: center;
-    font-size: 22px;
+    margin-top: 35px;
 }
 
 @media (max-width: 429px) {
@@ -57,11 +63,10 @@
         ul {
             display: grid;
             grid-template-columns: 1fr;
-            gap: 10px 2px;
+            gap: 30px;
         }
         li {
             display: flex;
-            border: 1px solid #000;
             border-radius: 20px;
             align-items: center;
             padding: 2px;
@@ -73,10 +78,11 @@
             border-radius: 50%;
         }
         p {
-            font-family: "Montserrat", sans-serif;
-            font-weight: 500;
             font-size: 15px;
             text-align: center;
+        }
+        .star-advantages {
+            margin-top: 35px;
         }
     }
 }

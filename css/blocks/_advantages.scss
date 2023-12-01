@@ -1,33 +1,34 @@
-.advantages {
-    margin-top: 50px;
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
-}
-.advantages-galery__wrapper {
+.advantages-galery__wrapper{
   position: relative;
-  z-index: 1;
   &::after {
     content: '';
-
-    background-image: url(../../image/home/bacground-home-two.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: left;
-    opacity: .8;
+    position: absolute;
+    top: 0;
+    left: 0;
 
     width: 100%;
     height: 100%;
 
-    position: absolute;
-    top: 0;
-    right: 0;
+    background-image: url(../../image/home/bacground-home-two.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 
-    z-index: -1;
+    opacity: .9;
   }
-
 }
+.advantages {
+    margin-top: 50px;
+    padding-top: 50px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
 .advantages-wrapper {
     padding: 25px 0;
+    position: relative;
+    z-index: 1;
+
     ul {
         display: flex;
         flex-direction: column;

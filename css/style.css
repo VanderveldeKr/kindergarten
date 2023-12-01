@@ -1,7 +1,8 @@
 /* Reset and base styles  */
 @import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;500;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap");
 * {
   padding: 0px;
   margin: 0px;
@@ -303,7 +304,7 @@ header {
     transform: rotate(-45deg);
   }
   .burger-menu_nav {
-    width: 50%;
+    width: 70%;
     position: fixed;
     z-index: 20;
     display: flex;
@@ -409,11 +410,10 @@ header {
   gap: 0;
 }
 .home-title .title {
-  font-family: "M PLUS Rounded 1c", sans-serif;
-  font-weight: 500;
-  font-size: 64px;
-  line-height: 100%;
-  letter-spacing: 4px;
+  font-family: "Berkshire Swash", serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 140%;
 }
 
 .home-title, .home-subtitle {
@@ -424,24 +424,40 @@ header {
 
 .home-title::before {
   content: "";
-  background-image: url(../image/home/background-title-2.png);
+  background-image: url(../image/home/background-title.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   position: absolute;
   z-index: -1;
-  top: -150px;
-  left: -67%;
+  top: -35%;
+  left: -43%;
   transform: translateX(20%);
   background-position: center;
-  width: 170%;
-  height: 350%;
+  width: 135%;
+  height: 210%;
+  opacity: 0.4;
+}
+
+.home-title::after {
+  content: "";
+  background-image: url(../image/home/background-title.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  z-index: -1;
+  top: -60%;
+  left: -30%;
+  transform: translateX(20%);
+  background-position: center;
+  width: 115%;
+  height: 220%;
 }
 
 .title {
   text-align: center;
   line-height: 110%;
-  font-weight: 500;
-  font-size: 64px;
+  font-weight: 700;
+  font-size: 82px;
   text-transform: uppercase;
   z-index: 2;
   position: relative;
@@ -472,18 +488,6 @@ header {
 @media (max-width: 950px) {
   .title {
     font-size: 82px;
-  }
-  .home-title {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  .home-title .title {
-    font-family: "M PLUS Rounded 1c", sans-serif;
-    font-weight: 500;
-    font-size: 42px;
-    line-height: 110%;
-    letter-spacing: 4px;
   }
 }
 @media (max-width: 420px) {
@@ -805,6 +809,12 @@ header {
     font-size: 32px;
   }
 }
+@media (max-width: 520px) {
+  .form-contact .title h2 {
+    font-size: 28px;
+    text-align: center;
+  }
+}
 .reviews {
   margin: 50px 0;
   padding: 50px 0;
@@ -1016,33 +1026,34 @@ header {
     font-size: 21px;
   }
 }
+.advantages-galery__wrapper {
+  position: relative;
+}
+.advantages-galery__wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../../image/home/bacground-home-two.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.9;
+}
+
 .advantages {
   margin-top: 50px;
+  padding-top: 50px;
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
 }
 
-.advantages-galery__wrapper {
-  position: relative;
-  z-index: 1;
-}
-.advantages-galery__wrapper::after {
-  content: "";
-  background-image: url(../../image/home/bacground-home-two.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: left;
-  opacity: 0.8;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: -1;
-}
-
 .advantages-wrapper {
   padding: 25px 0;
+  position: relative;
+  z-index: 1;
 }
 .advantages-wrapper ul {
   display: flex;
@@ -1103,49 +1114,62 @@ header {
 
 .our-advantages {
   width: 100%;
+  margin-top: 50px;
 }
 
 .our-advantages-wrapper {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+  padding-top: 25px;
 }
-.our-advantages-wrapper .our-advantages__card {
-  width: 100%;
+.our-advantages-wrapper ul {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 25px;
+}
+.our-advantages-wrapper li {
   display: flex;
-  justify-content: space-between;
+  border-radius: 20px;
   align-items: center;
-  border: 1px solid #000;
-  border-radius: 75px;
+  padding: 2px;
 }
-.our-advantages-wrapper .our-advantages__card:nth-child(even) {
+.our-advantages-wrapper li:nth-child(even) {
   flex-direction: row-reverse;
+  justify-content: space-between;
 }
-.our-advantages-wrapper .our-advantages__card p {
+.our-advantages-wrapper .our-advantages__img {
+  width: 30%;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.our-advantages-wrapper .our-advantages__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.our-advantages-wrapper .our-advantages__text {
   width: 70%;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  font-size: 22px;
   text-align: center;
 }
-.our-advantages-wrapper .image-our-advantages {
-  background-color: #000;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.our-advantages-wrapper p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  text-align: center;
+  padding: 0 10px;
+  position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
 }
-.our-advantages-wrapper .image-our-advantages img {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
+.our-advantages-wrapper p span {
+  position: absolute;
+  top: -5px;
+  right: -5px;
 }
 
 .star-advantages {
-  margin-top: 25px;
-  text-align: center;
-  font-size: 22px;
+  margin-top: 35px;
 }
 
 @media (max-width: 429px) {
@@ -1155,11 +1179,10 @@ header {
   .our-advantages-wrapper ul {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 10px 2px;
+    gap: 30px;
   }
   .our-advantages-wrapper li {
     display: flex;
-    border: 1px solid #000;
     border-radius: 20px;
     align-items: center;
     padding: 2px;
@@ -1170,9 +1193,10 @@ header {
     border-radius: 50%;
   }
   .our-advantages-wrapper p {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
     font-size: 15px;
     text-align: center;
+  }
+  .our-advantages-wrapper .star-advantages {
+    margin-top: 35px;
   }
 }/*# sourceMappingURL=style.css.map */
