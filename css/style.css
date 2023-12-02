@@ -409,12 +409,6 @@ header {
   flex-direction: column;
   gap: 0;
 }
-.home-title .title {
-  font-family: "Berkshire Swash", serif;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 140%;
-}
 
 .home-title, .home-subtitle {
   position: relative;
@@ -430,7 +424,7 @@ header {
   position: absolute;
   z-index: -1;
   top: -35%;
-  left: -43%;
+  left: -46%;
   transform: translateX(20%);
   background-position: center;
   width: 135%;
@@ -446,10 +440,10 @@ header {
   position: absolute;
   z-index: -1;
   top: -60%;
-  left: -30%;
+  left: -40%;
   transform: translateX(20%);
   background-position: center;
-  width: 115%;
+  width: 125%;
   height: 220%;
 }
 
@@ -726,6 +720,7 @@ header {
   width: 100%;
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
+  margin-bottom: 50px;
 }
 
 .galey-slider {
@@ -769,7 +764,6 @@ header {
   width: 100%;
   height: 300px;
   border-radius: 20px;
-  box-shadow: 1px -1px 5px 1px #8bd444;
 }
 
 .form-contact .form-contact__wrapper {
@@ -796,9 +790,6 @@ header {
 }
 
 @media (max-width: 950px) {
-  .form-contact .form-contact__wrapper {
-    gap: 15px;
-  }
   .form-contact .title h2 {
     font-weight: 700;
     font-size: 42px;
@@ -1137,15 +1128,16 @@ header {
   justify-content: space-between;
 }
 .our-advantages-wrapper .our-advantages__img {
-  width: 30%;
+  width: 100px;
+  height: auto;
   border-radius: 50%;
   overflow: hidden;
 }
 .our-advantages-wrapper .our-advantages__img img {
   width: 100%;
-  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  background-position: start;
 }
 .our-advantages-wrapper .our-advantages__text {
   width: 70%;
@@ -1153,8 +1145,9 @@ header {
 }
 .our-advantages-wrapper p {
   font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  font-size: 15px;
+  font-weight: 400;
+  line-height: 110%;
+  font-size: 23px;
   text-align: center;
   padding: 0 10px;
   position: relative;
@@ -1165,7 +1158,10 @@ header {
 .our-advantages-wrapper p span {
   position: absolute;
   top: -5px;
-  right: -5px;
+  right: -7px;
+}
+.our-advantages-wrapper .star-advantages {
+  margin-top: 35px;
 }
 
 .star-advantages {
@@ -1186,11 +1182,6 @@ header {
     border-radius: 20px;
     align-items: center;
     padding: 2px;
-  }
-  .our-advantages-wrapper img {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
   }
   .our-advantages-wrapper p {
     font-size: 15px;

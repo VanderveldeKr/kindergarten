@@ -5,6 +5,7 @@
         justify-content: center;
         flex-direction: column;
         gap: 50px;
+
     }
     .title {
         h2{
@@ -27,9 +28,6 @@
 
 @media(max-width:950px) {
     .form-contact {
-        .form-contact__wrapper {
-            gap: 15px;
-        }
         .title {
             h2{
                 font-weight: 700;
