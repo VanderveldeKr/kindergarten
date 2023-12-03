@@ -7,12 +7,15 @@
         line-height: 110%;
         font-size: 21px;
         text-align: right;
-        width: fit-content;
-        align-items: end;
+        align-items: center;
         display: flex;
         flex-direction: column;
-        gap: 10px;
-        margin-left: auto;
+        gap: 20px;
+        margin: 0 auto;
+
+        .star-advantages__phone {
+            margin-left: auto;
+        }
     }
 }
 .contacts-content {

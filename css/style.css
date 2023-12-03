@@ -897,12 +897,13 @@ header {
   line-height: 110%;
   font-size: 21px;
   text-align: right;
-  width: -moz-fit-content;
-  width: fit-content;
-  align-items: end;
+  align-items: center;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 20px;
+  margin: 0 auto;
+}
+.contacts .star-advantages .star-advantages__phone {
   margin-left: auto;
 }
 
@@ -1181,11 +1182,12 @@ header {
   text-align: center;
 }
 .our-advantages-wrapper .star-advantages {
+  font-size: 12px;
   margin-top: 35px;
   text-align: center;
 }
 .our-advantages-wrapper .star-advantages span {
-  font-size: 12px;
+  font-size: 10px;
 }
 
 .star-advantages {
