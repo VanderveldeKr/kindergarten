@@ -859,7 +859,7 @@ header {
 .reviews .swiper-reviews .reviews-text, .reviews .swiper .reviews-text {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  line-height: 110%;
+  line-height: 150%;
   font-size: 16px;
   display: flex;
   overflow-y: auto;
@@ -895,8 +895,15 @@ header {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   line-height: 110%;
-  font-size: 23px;
-  text-align: center;
+  font-size: 21px;
+  text-align: right;
+  width: -moz-fit-content;
+  width: fit-content;
+  align-items: end;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-left: auto;
 }
 
 .contacts-content {
@@ -1121,6 +1128,10 @@ header {
 .our-advantages-wrapper {
   width: 100%;
   padding-top: 25px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  line-height: 110%;
+  font-size: 20px;
 }
 .our-advantages-wrapper ul {
   display: grid;
@@ -1134,10 +1145,6 @@ header {
   padding: 2px;
 }
 .our-advantages-wrapper li p {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  line-height: 110%;
-  font-size: 20px;
   position: relative;
   width: -moz-fit-content;
   width: fit-content;
@@ -1146,6 +1153,7 @@ header {
 }
 .our-advantages-wrapper li p span {
   position: absolute;
+  font-size: 12px;
   top: -5px;
   right: -17px;
 }
@@ -1174,6 +1182,10 @@ header {
 }
 .our-advantages-wrapper .star-advantages {
   margin-top: 35px;
+  text-align: center;
+}
+.our-advantages-wrapper .star-advantages span {
+  font-size: 12px;
 }
 
 .star-advantages {
