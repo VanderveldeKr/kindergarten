@@ -6,6 +6,11 @@
     // #8bd444
     // #c2dfaf
 }
+.about-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
 .about-content {
     width: 100%;
     display: flex;
