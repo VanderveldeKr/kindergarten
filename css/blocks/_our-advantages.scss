@@ -4,12 +4,12 @@
 }
 .our-advantages-wrapper {
     width: 100%;
-    padding-top: 25px;
+    padding: 70px;
 
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
     line-height: 110%;
-    font-size: 20px;
+    font-size: 36px;
 
     ul {
         display: grid;
@@ -18,9 +18,7 @@
     }
     li {
         display: flex;
-        border-radius: 20px;
         align-items: center;
-        padding: 2px;
         p {
             position: relative;
             width: fit-content;
@@ -29,8 +27,8 @@
             span {
                 position: absolute;
                 font-size: 12px;
-                top: -5px;
-                right: -17px;
+                top: -10px;
+                right: -10px;
             }
         }
         &:nth-child(even) {
@@ -44,7 +42,7 @@
         }
     }
     .our-advantages__img {
-        width: 30%;
+        width: 200px;
         height: auto;
         border-radius: 50%;
         overflow: hidden;
@@ -56,6 +54,10 @@
     .our-advantages__text {
         width: 70%;
         text-align: center;
+
+        br {
+            display: none;
+        }
     }
 
     .star-advantages {      
@@ -70,6 +72,37 @@
 }
 .star-advantages {
     margin-top: 35px;
+}
+
+@media (max-width: 950px) {
+    .our-advantages-wrapper {
+        padding: 0;
+        padding-top: 25px;
+
+        font-size: 20px;
+
+        li {
+            padding: 2px;
+            p {
+                span {
+                    top: -5px;
+                    right: -17px;
+                }
+            }
+        }
+        .our-advantages__img {
+            width: 30%;
+        }
+
+        .our-advantages__text {
+            width: 70%;
+            text-align: center;
+    
+            br {
+                display: block;
+            }
+        }
+    }
 }
 
 @media (max-width: 429px) {

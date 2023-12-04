@@ -3,6 +3,9 @@
     padding: 50px 0;
     border-radius: 50px;
 
+    .title {
+        margin-bottom: 50px;
+    }
     .swiper-reviews, .swiper {
         height: auto;
         .swiper-wrapper {
@@ -72,6 +75,10 @@
     .reviews {
         margin: 25px 0;
         padding: 25px 0;
+
+        .title {
+            margin-bottom: 25px;
+        }
     }
 }
 

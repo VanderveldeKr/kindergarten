@@ -4,10 +4,14 @@
 .sale-wrapper {
     display: flex;
     flex-direction: column;
+
+    padding: 25px 0;
 }
 .sale-content {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+
+    padding: 50px 0;
 }
 .sale-card {
     position: relative;
@@ -33,37 +37,21 @@
 
 @media(max-width:950px){
     .sale {
-        width: 100%;
         padding: 0;
         padding-bottom: 50px;
     }
     .sale-wrapper {
-        display: flex;
-        flex-direction: column;
+        padding: 0;
     }
     .sale-content {
-        display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
+    
+        padding: 0;
     }
     .sale-card {
-        position: relative;
         p {
-            position: absolute;
             width: 50%;
-            margin: 0 auto;
-            top: 0;
-            bottom: 0;
-            right: 0;
-            left: 0;
-            
-    
             font-size: 36px;
-            color: #fff;
-            font-weight: 700;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
         }
     }
 }
