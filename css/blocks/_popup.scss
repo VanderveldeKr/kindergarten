@@ -226,6 +226,11 @@ textarea.input-form::placeholder {
     padding-left: 80px;
     padding-right: 80px;
   }
+
+  .form-end {
+    font-size: 56px;
+    text-align: center;
+  }
   
   @media (max-width: 576px) {
   .popup__content {
