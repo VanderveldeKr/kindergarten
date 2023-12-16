@@ -164,7 +164,7 @@ jQuery(document).ready(function () {
                 success: function(data) {
                     form.hide(); // Скрываем форму
                     form.closest('.pop-up__body').find('.pop-up__body-text p').text('');
-                    form.closest('.pop-up__body').append('<p class="form-end">Ваша заявка успешно отправлена!</p>');
+                    form.closest('.pop-up__body').append('<p class="form-end"style="font-size: 36px; color: #000;">Ваша заявка успешно отправлена! Дождитесь звонка или позвоните по номеру +7 981 124 23 33</p>');
                 },
                 error: function() {
                     alert("Произошла ошибка");

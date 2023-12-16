@@ -61,9 +61,17 @@ header {
 // .nav__list-item a:focus:after {
 // 	width: 100%;
 // }
-.header-button {
+  .header-button {
     background-color: linear-gradient(#8bd444 rgba(69, 117, 59, 0.29));
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 10px;
+  }
 
+.header-phone {
+  font-size: 32px;
+  font-weight: 700;
 }
 .btn-form {
     border-radius: 50px;
@@ -101,6 +109,24 @@ header {
     }
 }
 
+@media(max-width:1280px) {
+  .header-nav__wrapper {
+    gap: 20px;
+  }
+  .header-nav__list {
+    gap: 5px;
+  }
+  .nav__list-item a {
+    padding: 5px 10px;
+  }
+  .header-button {
+    gap: 5px;
+  }
+  
+  .header-phone {
+    font-size: 28px;
+  }
+}
 @media(max-width:950px) {
     header {
         padding: 20px 0;
@@ -247,4 +273,14 @@ header {
         background: linear-gradient(90deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.4));
         animation: flareAnimation 3s infinite linear; // Время и тип анимации можно менять
     }
+}
+@media(max-width:480px) {
+  .header-phone {
+    font-size: 18px;
+  }
+}
+@media(max-width:405px) {
+  .header-button {
+    flex-direction: column;
+  }
 }
